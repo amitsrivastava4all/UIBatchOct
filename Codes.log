@@ -1,0 +1,86 @@
+function loops(){
+for(var i = 1; i<=10; i++){
+
+}
+}
+undefined
+var p =1000;
+undefined
+pp =999;
+999
+var tt;
+undefined
+typeof tt;
+"undefined"
+function loops(){
+console.log(i);
+for(var i = 1; i<=10; i++){
+
+}
+}
+undefined
+loops();
+undefined
+undefined
+function loops(){
+console.log("I is "+i);
+for(var i = 1; i<=10; i++){
+
+}
+}
+undefined
+loops();
+I is undefined
+undefined
+function loops(){
+console.log("I is "+i+" J is "+j);
+for(var i = 1; i<=10; i++){
+
+}
+}
+undefined
+loops();
+Uncaught ReferenceError: j is not defined(…)
+function loops(){
+//console.log("I is "+i+" J is "+j);
+for(var i = 1; i<=10; i++){
+
+}
+}
+undefined
+function evenOdd
+Uncaught SyntaxError: Unexpected end of input
+function evenOdd(t){
+if(t%2==0){
+console.log("Even ",t);
+}
+else{
+console.log("Odd ",t);
+}
+}
+undefined
+evenOdd(2);
+Even  2
+undefined
+evenOdd(5);
+Odd  5
+undefined
+function loops(fn){
+//console.log("I is "+i+" J is "+j);
+for(var i = 1; i<=10; i++){
+ fn(i);
+}
+}
+undefined
+loops(evenOdd);
+Odd  1
+Even  2
+Odd  3
+Even  4
+Odd  5
+Even  6
+Odd  7
+Even  8
+Odd  9
+Even  10
+undefined
