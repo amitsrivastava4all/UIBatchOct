@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student CRUD Operation</title>
+    <script src="../js/model.js"></script>
+    <script src="../js/controller.js"></script>
+</head>
+<body>
+    <table >
+        <tr>
+            <td><label for="">Rollno</label></td>
+            <td><input type="text" placeholder="Type Rollno" id="rollno"></td>
+        </tr>
+        <tr>
+            <td><label for="">Name</label></td>
+            <td><input type="text" placeholder="Type Name" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="">City</label></td>
+            <td>
+                <select  id="city">
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Shimla</option>
+                </select>
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td><label for="">Course</label></td>
+            <td>
+                <select  id="course">
+                    <option >Java</option>
+                    <option >MEAN Stack</option>
+                    <option >ML</option>
+                </select>
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td><button id="add">Add</button></td>
+                        <td><button>Delete</button></td>
+                        <td><button id="search">Search</button></td>
+                        <td><button id="sort">Sort</button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <fieldset><legend>Student Data</legend>
+    <table border="1" id="studenttable">
+       <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Rollno</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>City</th>
+        </tr>
+        </thead>
+        <tbody id="tablebody">
+            
+        </tbody>
+    </table>
+    </fieldset>
+</body>
+</html>
