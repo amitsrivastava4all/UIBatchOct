@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item -CRUD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../js/custom/model.js"></script>
+    <script src="../js/custom/controller.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Item CRUD Operations</h1>
+        <div class="form-horizontal">
+  <div class="form-group">
+    <label for="itemno" class="col-sm-2 control-label">ItemNo</label>
+    <div class="col-sm-10">
+      <label class="form-control" for="" id="itemno"></label>
+  </div>
+</div>
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control cleardata" id="name" placeholder="Item Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="desc" class="col-sm-2 control-label">Desc</label>
+    <div class="col-sm-10">
+     <textarea cols="20" row="6" id="desc" class="form-control cleardata" placeholder="Desc"></textarea>
+     Char Left<span id="charleft"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="price" class="col-sm-2 control-label">Price</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control cleardata" id="price" placeholder="Price">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="url" class="col-sm-2 control-label">URL</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control cleardata" id="url" placeholder="URL">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button id="add" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>Add</button>
+      <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>Delete</button>
+      <button class="btn btn-info"><span class="glyphicon glyphicon-search"></span>Search</button>
+      <button class="btn btn-warning"><span class="glyphicon glyphicon-floppy-saved"></span>Save</button>
+      <button class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>Update</button>
+    </div>
+  </div>
+</div>
+   <fieldset><legend>Item List</legend>
+   <table class="table table-bordered table-striped" >
+      <thead>
+          <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Desc</th>
+              <th>Price</th>
+              <th>URL</th>
+              <th>Operations</th>
+          </tr>
+      </thead>
+       <tbody id="itembody">
+           
+       </tbody>
+   </table>
+   </fieldset>
+    </div>
+    
+</body>
+</html>
