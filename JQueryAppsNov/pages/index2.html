@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <style>
+        .yellow{
+            background-color: yellow;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+   <button>Click</button>
+    <div>
+        <p>Hello1</p>
+        <p>Hello2</p>
+        <p>Hello3</p>
+        <p>Hello4</p>
+        <p>Hello5</p>
+        <input type="text">
+        <br>
+        <input type="text" class="myclass">
+        <br>
+        <input type="text" class="myclass">
+        <br>
+        <input type="text">
+        <br>
+        <input type="text" class="myclass">
+        <br>
+        <button id="clear">Clear</button>
+    </div>
+    <script>
+        
+    $("button").click(function(){
+        $("div p:eq(2)").html("Hi");
+    })
+    $("input[type='text']").focusin(function(){
+        $(this).addClass("yellow");
+    });
+        $("input[type='text']").focusout(function(){
+        $(this).removeClass("yellow");
+    });
+    $("#clear").click(function(){
+        $(".myclass").val("");
+        //$(":text").val("");
+        //$("input[type='text']").val("");
+    })
+    </script>
+</body>
+</html>

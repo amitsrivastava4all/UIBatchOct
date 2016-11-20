@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        .hideit{
+           display: none; 
+        }
+    </style>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("fieldset").addClass("hideit");
+        $("input[type='text']").change(function(){
+            $("fieldset").removeClass("hideit");
+        })
+    })
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Type Salary">
+     <fieldset>
+        <legend>Salary Details</legend>
+        <ul>
+            <li id="hra"></li>
+            <li id="da"></li>
+            <li id="ta"></li>
+            <li id="pf"></li>
+            <li id="ns"></li>
+        </ul>
+    </fieldset>
+</body>
+</html>

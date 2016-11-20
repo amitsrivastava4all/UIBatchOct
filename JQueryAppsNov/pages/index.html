@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Examples</title>
+    <style>
+        .red{
+            color:red;
+        }
+        .green{
+            color:green;
+        }
+    </style>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function() { 
+        
+//        $("button , p , h1").click(function(){
+//            alert("Click Fire...");
+//        })
+       // $("#p1").addClass("green");
+        $("button").dblclick(function(){
+            $("div div div p span").text("<h1>Hello </h1>");
+            //alert("Double Click");
+        })
+        $("#p1").hover(function(){
+            console.log("Hover Call");
+            $(this).toggleClass("red");
+        })
+        
+//    $("p").click(function(){
+//       $("p").hide(2000); 
+//    });
+        }) ;
+    </script>
+</head>
+<body>
+<div>
+    <div>
+        <div>
+            <p><span>Hi</span></p>
+        </div>
+    </div>
+</div>
+ <h1>Hello</h1>
+  <button></button>
+   <p onclick="$(this).hide(2000)">Hello</p>
+    <p id="p1">Hello1</p>
+    <p>Hello2</p>
+    <p>Hello3</p>
+    <p>Hello4</p>
+    <p>Hello5</p> 
+</body>
+</html>

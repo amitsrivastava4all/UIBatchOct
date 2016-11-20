@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary calculate</title>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("fieldset").hide();
+       $("input[type='text']").change(function(){
+           $("fieldset").show(1000);
+           var salary = parseInt($(this).val());
+           $("#hra").html("HRA is "+(salary*0.30));
+           $("#da").html("DA is "+(salary*0.20));
+           $("#ta").html("TA is "+(salary*0.10));
+           $("#pf").html("PF is "+(2000));
+           $("#ns").html("NS is "+(salary + salary*0.30 + salary *0.20 + salary *0.10 - 2000 ));
+       }); 
+    });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Type Salary Here">
+    <fieldset>
+        <legend>Salary Details</legend>
+        <ul>
+            <li id="hra"></li>
+            <li id="da"></li>
+            <li id="ta"></li>
+            <li id="pf"></li>
+            <li id="ns"></li>
+        </ul>
+    </fieldset>
+    
+</body>
+</html>
