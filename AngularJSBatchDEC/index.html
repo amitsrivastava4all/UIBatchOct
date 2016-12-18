@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="libs/angular.min.js"></script>
+</head>
+<body ng-app>
+ <button class="{{classname}}">Ok</button>
+  <div class="{{classname}}">
+ <input type="text" ng-model="classname" placeholder="Enter class Name">
+     <input type="text" placeholder="Type Name Here" ng-model="name" name="ename">
+   Welcome {{name|uppercase}}
+   
+   <input type="text" ng-model="price" ng-init="price=0">
+   <input type="text" ng-model="qu" ng-init="qu=0">
+   Amount is {{price*qu}}
+   <h1 ng-bind="name"></h1>
+    </div>
+</body>
+</html>
